@@ -1606,8 +1606,7 @@
               const mapUrl = ev.mapUrl || window.CONFIG.mapsDirectUrl;
               const evAddress = ev.address || window.CONFIG.venueAddress;
               const calTitle = encodeURIComponent(`${window.CONFIG.groomName} & ${window.CONFIG.brideName} Wedding: ${ev.name}`);
-              const noteLabel = ev.notePrefix || "✨ Attire:";
-              const calDetails = encodeURIComponent(`${ev.name} at ${ev.venue}. ${noteLabel} ${ev.dressCode}. Address: ${evAddress}`);
+              const calDetails = encodeURIComponent(`${ev.name} at ${ev.venue}. Address: ${evAddress}`);
               const calLoc = encodeURIComponent(`${ev.venue}, ${evAddress}`);
               const calUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${calTitle}&details=${calDetails}&location=${calLoc}`;
 
@@ -1625,10 +1624,6 @@
                     <span>${ev.venue}</span>
                   </div>
                   <p class="event-address">${evAddress}</p>
-                  <div class="event-dress-code">
-                    <span>${noteLabel}</span>
-                    <span>${ev.dressCode}</span>
-                  </div>
                   <div class="event-actions">
                     <a href="${mapUrl}" class="btn-action" target="_blank" rel="noopener">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
