@@ -682,16 +682,31 @@
       line-height: 1.4;
     }
     .event-dress-code {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.75rem;
-      color: #eed6b3;
-      background: rgba(0, 0, 0, 0.25);
-      padding: 4px 10px;
-      border-radius: 6px;
-      border-left: 2px solid var(--color-gold);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: #f3dfc8;
+      background: rgba(0, 0, 0, 0.32);
+      padding: 6px 12px;
+      border-radius: 8px;
+      border-left: 3px solid var(--color-gold);
       margin-bottom: 14px;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .event-dress-code > span:first-child {
+      flex-shrink: 0;
+      white-space: nowrap;
+      font-weight: 600;
+      color: var(--color-gold-light);
+    }
+    .event-dress-code > span:last-child {
+      flex: 1;
+      min-width: 0;
     }
 
     /* Event Action Buttons (Maps & Calendar) */
@@ -1200,7 +1215,7 @@
           <circle cx="20" cy="23" r="2.2" fill="#d4af7a"/>
           <path d="M20,3 C20,10 18,37 20,37" stroke="#d4af7a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
         </svg>
-        <span class="gate-mantra-text">|| Jai Sri Krishna ||</span>
+        <span class="gate-mantra-text">|| Jai Shree Krishna ||</span>
       </div>
 
       <!-- The 3D Envelope Card -->
@@ -1289,7 +1304,7 @@
          HERO COVER CARD
          ========================================================================== -->
     <header class="hero-card" role="banner">
-      <!-- Auspicious Sri Krishna Mor-Pankh & Invocation Header -->
+      <!-- Auspicious Shree Krishna Mor-Pankh & Invocation Header -->
       <div style="margin-bottom: 8px;" aria-hidden="true">
         <svg width="28" height="34" viewBox="0 0 100 120" fill="none">
           <path d="M50 115 C50 75 48 45 50 10" stroke="#d4af7a" stroke-width="2.5" stroke-linecap="round"/>
@@ -1300,7 +1315,7 @@
           <circle cx="50" cy="42" r="3.5" fill="#f7e6ca"/>
         </svg>
       </div>
-      <div class="auspicious-mantra" id="auspicious-header">|| Jai Sri Krishna ||</div>
+      <div class="auspicious-mantra" id="auspicious-header">|| Jai Shree Krishna ||</div>
 
       <!-- Monogram Crest -->
       <div class="monogram-crest" aria-hidden="true">
@@ -1471,7 +1486,7 @@
       brideName: "Dr Bhumi Patil",
       
       // Traditional Invocation
-      auspiciousMantra: "|| Jai Sri Krishna ||",
+      auspiciousMantra: "|| Jai Shree Krishna ||",
       
       // All Events Venue & Exact Google Maps Location
       venueName: "Swastik & CB Farm Party Plots",
